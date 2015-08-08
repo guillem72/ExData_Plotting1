@@ -5,7 +5,7 @@
 
 make_plot1<-function(ampla=480,llarg=480){
 #Read data
-power <- read.csv("~/sincron/coursera/r/exploration/week1/household_power_consumption.txt", sep=";", na.strings="?")
+power <- read.csv("household_power_consumption.txt", sep=";", na.strings="?")
 
 #Transform the dates in data to a 'R native' Date format  
 dates<-as.Date(power$Date,"%d/%m/%Y")
